@@ -24,6 +24,13 @@ function App() {
             ></div>
            ))}
       </div>
+      <div className='coustom-colo-picker' style={{backgroundColor:backgroundColor}}>
+        <input
+        type='color'
+        value={backgroundColor}
+        onChange={(e)=>handleColor(e.target.value)}
+        ></input>
+      </div>
     </div>
   )
 }
